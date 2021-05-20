@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+		<section>
+		<h1><font color="red">Aprendiendo reveal.js</font></h1>
+		<hr>
+		<h2>Francisco D. Igual</h2>
+		<hr>
+		<h3>MLD - PMED</h3>
+		</section>
+
+                <section>
+		<h3>Esta es una transparencia horizontal única</h3>
+		</section>
+
+                <section>
+                  <section><h3>Esta es una transparencia horizontal con otras verticales</h3></section>
+                  <section>Transparencia vertical 1</section>
+                </section>
+
+                <section>
+                  <section><h3>Esta es otra transparencia horizontal con otras verticales</h3></section>
+                  <section>Transparencia vertical 2</section>
+                  <section>En cualquier momento puedes pulsar B o . para pausar la presentaci&oacute;n</section>
+                  <section>Pulsa ESC para ver un esquema global de la presentaci&oacute;n</section>
+                  <section>
+                    <h3>Incluyendo HTML en nuestras transparencias</h3>
+                    <center>Texto centrado. Esto es una <b>lista no ordenada</b></center>
+                    <ul>
+                    <li>Primer item</li>
+                    <li>Segundo item</li>
+                    <li>Tercer item</li>
+                    </ul>
+                  </section>
+                </section>
+
+                <section>
+                  <section> <h3>Incluyendo Markdown en nuestras transparencias</h3> </section>
+                  <section data-markdown> 
+                    <script type="text/template">
+                      ## Transparencia escrita en Markdown
+
+                      * Primer item
+                      * Segundo item
+                        * Lista anidada
+                      * *Tercer item (en cursiva)*
+                      * **Cuarto item (en negrita)**
+                    </script>
+                  </section>
+                </section>
+
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            Reveal.initialize({
+              dependencies: [
+		// Para interpretar Markdown en los elementos <section>
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+              ]
+            });
+        </script>
+    </body>
+</html>
